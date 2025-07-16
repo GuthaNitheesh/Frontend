@@ -3,7 +3,7 @@
 import { BrowserRouter, Routes, Route, Navigate, Link } from "react-router-dom";
 import { useEffect, useState } from "react";
 
-import HomePage from "./pages/homePage";
+import HomePage from "./pages/HomePage";
 import LoginPage from "./pages/LoginPage";
 import SignUpPage from "./pages/SignUpPage";
 import TaskPage from "./pages/TaskPage";
