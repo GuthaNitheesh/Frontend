@@ -1,0 +1,95 @@
+.task-list-main {
+  background-color: #ffffff;
+  padding: 15px;
+  width: 300px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  margin: 10px;
+  flex-shrink: 0;
+}
+
+.task-list-title {
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+}
+
+.task-list-task-container {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.task-card {
+  border: 1px solid #ddd;
+  padding: 10px;
+  border-radius: 6px;
+  background-color: #f9f9f9;
+}
+
+.task-index,
+.task-work-title,
+.task-task-title,
+.task-assignee,
+.task-assignor,
+.task-deadline,
+.task-priority,
+.task-status {
+  font-size: 14px;
+  margin: 2px 0;
+}
+
+.task-edit-buttons {
+  display: flex;
+  gap: 5px;
+  margin-top: 5px;
+}
+
+.task-btn {
+  padding: 5px 8px;
+  margin: 4px 4px 0 0;
+  border: none;
+  border-radius: 4px;
+  font-size: 13px;
+  cursor: pointer;
+  background-color: #007bff;
+  color: white;
+}
+
+.task-btn:hover {
+  opacity: 0.9;
+}
+
+.task-btn.edit {
+  background-color: #17a2b8;
+}
+
+.task-btn.delete {
+  background-color: #dc3545;
+}
+
+.task-btn.mark-progress {
+  background-color: #ffc107;
+  color: #000;
+}
+
+.task-btn.mark-done {
+  background-color: #28a745;
+}
+
+.task-btn.submit {
+  background-color: #28a745;
+}
+
+.task-btn.cancel {
+  background-color: #6c757d;
+}
+
+.task-completed {
+  color: green;
+  font-weight: bold;
+}

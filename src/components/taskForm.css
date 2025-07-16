@@ -1,0 +1,97 @@
+
+.task-form-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 40px;
+  padding: 20px;
+  width: 100%;
+  background-color: #f5f7fa; /* optional: light background */
+}
+.task-form-box {
+  width: 100%;
+  max-width: 640px; /* ⬅️ Decreased from 800px */
+  background-color: #ffffff;
+  padding: 35px 50px; /* ⬅️ Optional: slightly reduced padding */
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.12);
+  transition: all 0.3s ease;
+}
+
+
+
+
+.task-form-box:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+}
+
+.form-heading {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 18px;         /* ↓ Tighter spacing */
+  color: #222;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 12px;         /* ↓ Reduced spacing */
+}
+
+.form-group label {
+  font-size: 15px;
+  margin-bottom: 5px;
+  color: #444;
+}
+
+.form-group input,
+.form-group select {
+  padding: 10px;
+  font-size: 14px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  transition: border-color 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 3px rgba(0, 123, 255, 0.3);
+  outline: none;
+}
+
+.task-form-btn {
+  margin-top: 12px;
+  width: 100%;
+  padding: 10px;
+  font-size: 15px;
+  font-weight: bold;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.task-form-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  .task-form-box {
+    padding: 20px;
+    border-radius: 10px;
+  }
+
+  .form-heading {
+    font-size: 20px;
+  }
+
+  .task-form-btn {
+    font-size: 14px;
+  }
+}
