@@ -1,4 +1,4 @@
-import "./contactPage.css";
+import "./ContactPage.css";
 import Navbar from "../components/Navbar";
 const ContactPage = ({currUser,handleLogout}) => {
     return (
