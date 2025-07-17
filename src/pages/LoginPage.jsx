@@ -8,7 +8,7 @@ const LoginPage = ({ afterLogin }) => {
   const handleLogin = async (e) => {
     e.preventDefault();
     setLoading(true);
-   console.log("Submitting login form", email, password);
+  //  console.log("Submitting login form", email, password);
     const resp = await fetch(import.meta.env.VITE_BACKEND_URL + "/users/login", {
       method: "POST",
       
