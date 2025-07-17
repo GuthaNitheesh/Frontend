@@ -8,10 +8,10 @@ const LoginPage = ({ afterLogin }) => {
   const handleLogin = async (e) => {
     e.preventDefault();
     setLoading(true);
-
+   console.log("Submitting login form", email, password);
     const resp = await fetch(import.meta.env.VITE_BACKEND_URL + "/users/login", {
       method: "POST",
-      credentials: "include",
+      
       body: JSON.stringify({
         email: e.target.email.value,
         password: e.target.password.value,
@@ -19,6 +19,7 @@ const LoginPage = ({ afterLogin }) => {
       headers: {
         "content-type": "application/json",
       },
+      credentials: "include",
     });
 
     const respObj = await resp.json();

@@ -77,7 +77,7 @@ useEffect(() => {
 
     try {
       const resp = await fetch(import.meta.env.VITE_BACKEND_URL + "/users/logout", {
-        method: "GET",
+        method: "POST",
         credentials: "include",
       });
       const respObj = await resp.json();
