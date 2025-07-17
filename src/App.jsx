@@ -40,8 +40,8 @@ const App = () => {
     try {
       
       const resp = await fetch(import.meta.env.VITE_BACKEND_URL + "/users/me", {
-        method:"GET",
-        credentials: "include",
+          method: "GET",
+  credentials: "include",
           
    
       });
